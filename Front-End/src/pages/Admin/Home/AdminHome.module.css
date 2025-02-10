@@ -1,0 +1,7 @@
+.home_container {
+    min-height: 100vh;
+}
+.home_container h4 {
+    margin: 20px;
+    text-align: center;
+}

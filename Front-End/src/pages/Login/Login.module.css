@@ -1,0 +1,167 @@
+.login_container {
+    min-height: 100vh;
+    width: 100%;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_form {
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 5px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 20px;
+    border-radius: 5px;
+}
+.login_form h4 {
+    font-size: 0.90em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.login_form h4::before {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 1px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 25px;
+    transform: translateY(9px);
+    opacity: 0.5;
+}
+.login_form h4::after {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 1px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 25px;
+    transform: translateY(-8px);
+    opacity: 0.5;
+}
+.input_box {
+    position: relative;
+    width: 100%;
+}
+.input_box input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px;
+    outline: none;
+    font-weight: 550;
+    font-size: 0.95em;
+    transition: 0.5s;
+    letter-spacing: 0.02em;
+    border: 1px solid #929090;
+    border-radius: 3px;
+}
+.input_box input:focus {
+    outline: #222;
+}
+.submit_btn {
+    position: relative;
+    width: 100%;
+    background-color: #40ef75;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    color: #222;
+    font-size: 1em;
+    font-weight: 550;
+}
+.check_box {
+    margin-bottom: 20px;
+    font-size: 0.90em;
+}
+.check_box .check input {
+    margin-right: 5px;
+}
+
+.signup_box {
+    margin-top: 30px;
+}
+.signup_box h2 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.signup_box .signup_btn {
+    position: relative;
+    width: 100%;
+}
+.signup_box .signup_btn button {
+    position: relative;
+    width: 100%;
+    background-color: #2297f7;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+}
+.signup_box .signup_btn button a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 550; 
+    font-size: 1em;
+}
+/* Responsive for min-width: 650px */
+@media screen and (min-width:650px) {
+    .login_form {
+        width: 50%;
+    }
+    .btn_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login_form h4::before {
+        position: absolute;
+        content: "";
+        width: 35%;
+        height: 1px;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 25px;
+        transform: translateY(9px);
+        opacity: 0.5;
+    }
+    .login_form h4::after {
+        position: absolute;
+        content: "";
+        width: 35%;
+        height: 1px;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 25px;
+        transform: translateY(-8px);
+        opacity: 0.5;
+    }
+    /* .submit_btn {
+        width: 50%;
+    } */
+    .check_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Responsive for min-width: 990px */
+@media screen and (min-width: 990px) {
+    .login_form {
+        width: 40%;
+    }
+}
